@@ -1,125 +1,125 @@
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-scroll-behavior:smooth;
-}
-
 body{
+margin:0;
 font-family:Arial,sans-serif;
-background:#081220;
-color:#fff;
-line-height:1.6;
+background:#0b1020;
+color:white;
 }
 
 header{
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:20px 8%;
+padding:15px 25px;
 background:#111a33;
 position:sticky;
 top:0;
-z-index:1000;
+z-index:100;
 }
 
 .logo{
-font-size:32px;
+font-size:28px;
 font-weight:bold;
-color:#4db8ff;
+color:#44d8ff;
 }
 
 nav a{
 color:white;
 text-decoration:none;
-margin-left:20px;
+margin:0 10px;
 font-weight:bold;
-transition:.3s;
 }
 
 nav a:hover{
-color:#4db8ff;
+color:#44d8ff;
 }
 
 .hero{
 text-align:center;
-padding:140px 20px;
-background:linear-gradient(135deg,#081220,#163b7a);
+padding:30px 20px;
+background:linear-gradient(135deg,#0b1020,#17345f);
+}
+
+.banner{
+width:100%;
+max-width:1200px;
+display:block;
+margin:0 auto 25px;
+border-radius:20px;
+box-shadow:0 8px 25px rgba(0,0,0,0.5);
 }
 
 .hero h1{
-font-size:60px;
-margin-bottom:15px;
+font-size:48px;
+margin:10px 0;
 }
 
 .hero p{
-font-size:22px;
-margin-bottom:25px;
+font-size:20px;
+color:#d0d0d0;
 }
 
 .btn{
 display:inline-block;
-padding:15px 35px;
-background:#4db8ff;
+margin-top:20px;
+padding:12px 25px;
+background:#44d8ff;
 color:#000;
-text-decoration:none;
-border-radius:10px;
 font-weight:bold;
-transition:.3s;
+text-decoration:none;
+border-radius:30px;
+transition:0.3s;
 }
 
 .btn:hover{
+background:white;
 transform:scale(1.05);
 }
 
 .blog{
-padding:70px 8%;
+padding:50px 20px;
+text-align:center;
 }
 
 .blog h2{
-text-align:center;
-margin-bottom:40px;
-font-size:36px;
+font-size:32px;
+margin-bottom:25px;
+color:#44d8ff;
 }
 
 .cards{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:25px;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+max-width:1100px;
+margin:auto;
 }
 
 .card{
 background:#162544;
-padding:30px;
+padding:25px;
 border-radius:15px;
-transition:.3s;
-box-shadow:0 0 15px rgba(0,0,0,.3);
+box-shadow:0 5px 15px rgba(0,0,0,0.3);
+transition:0.3s;
 }
 
 .card:hover{
-transform:translateY(-8px);
-}
-
-.card h3{
-color:#4db8ff;
-margin-bottom:15px;
+transform:translateY(-5px);
 }
 
 .social{
-padding:70px 20px;
 text-align:center;
+padding:50px 20px;
 }
 
 .social h2{
-margin-bottom:20px;
+color:#44d8ff;
 }
 
 .social a{
-display:block;
-margin:15px;
-font-size:22px;
-color:#4db8ff;
+color:#44d8ff;
 text-decoration:none;
+font-size:20px;
+font-weight:bold;
 }
 
 .social a:hover{
@@ -127,21 +127,8 @@ color:white;
 }
 
 footer{
-background:#111a33;
-padding:25px;
 text-align:center;
-margin-top:40px;
-}
-
-.whatsapp{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#25D366;
-color:white;
-padding:15px 20px;
-border-radius:50px;
-text-decoration:none;
-font-weight:bold;
-box-shadow:0 0 15px rgba(0,0,0,.4);
+padding:20px;
+background:#111a33;
+margin-top:30px;
 }
