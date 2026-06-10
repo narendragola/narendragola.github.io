@@ -1,11 +1,11 @@
 body{
     margin:0;
-    font-family:Arial, sans-serif;
+    font-family:Arial,sans-serif;
     color:white;
 
-    background-image:url('banner.jpg');
+    background-image:url('file_00000000368c720b976d1b0d4df935d4.png');
     background-size:cover;
     background-position:center;
-    background-attachment:fixed;
     background-repeat:no-repeat;
+    background-attachment:fixed;
 }
