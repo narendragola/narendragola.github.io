@@ -1,0 +1,11 @@
+
+body{margin:0;background:#0b1020;color:white;font-family:Arial,sans-serif}
+header{display:flex;justify-content:space-between;padding:20px;background:#111a33}
+.logo{font-size:28px;font-weight:bold;color:#4db8ff}
+nav a{color:white;text-decoration:none;margin:0 10px}
+.hero{text-align:center;padding:100px 20px;background:linear-gradient(135deg,#0b1020,#17345f)}
+.btn{background:#4db8ff;color:#000;padding:12px 20px;border-radius:8px;text-decoration:none}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;padding:30px}
+.card,.social{background:#162544;margin:20px;padding:20px;border-radius:12px}
+.social a{color:#4db8ff}
+footer{text-align:center;padding:20px;background:#111a33}
