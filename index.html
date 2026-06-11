@@ -1,207 +1,218 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Narendragola Official</title>
-
-<link rel="stylesheet" href="style.css">
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
-
-<nav>
-<div class="logo">Narendragola Official</div>
-
-<div class="menu">
-<a href="#home">Home</a>
-<a href="#about">About</a>
-<a href="#services">Services</a>
-<a href="#content">Content</a>
-<a href="#register">Register</a>
-<a href="#contact">Contact</a>
-</div>
-</nav>
-
-<header class="hero" id="home">
-
-<div class="hero-content">
-
-<h1>Narendragola Official</h1>
-
-<p>
-Facebook Creator • Blogger • Digital Entrepreneur
-</p>
-
-<a href="#contact" class="btn">Contact Me</a>
-
-<div class="hero-social">
-
-<a href="https://www.facebook.com/Narendra.gola.15" target="_blank">Facebook</a>
-
-<a href="https://www.instagram.com/narendragola01" target="_blank">Instagram</a>
-
-<a href="https://t.me/narendragola01" target="_blank">Telegram</a>
-
-</div>
-
-</div>
-
-</header>
-
-<section id="about">
-
-<h2>About Me</h2>
-
-<div class="about-box">
-
-<h3>Narendragola</h3>
-
-<p>
-Facebook Creator • Blogger • Digital Entrepreneur
-</p>
-
-<p>
-I share Facebook Growth Tips, Monetization Guides,
-Viral Reels Strategies and Content Planning ideas.
-</p>
-
-</div>
-
-</section>
-
-<section class="profile-stats">
-
-<div class="stat-box">
-<h3>10K+</h3>
-<p>Followers</p>
-</div>
-
-<div class="stat-box">
-<h3>500+</h3>
-<p>Reels</p>
-</div>
-
-<div class="stat-box">
-<h3>100+</h3>
-<p>Tips Shared</p>
-</div>
-
-<div class="stat-box">
-<h3>24/7</h3>
-<p>Support</p>
-</div>
-
-</section>
-
-<section id="services">
-
-<h2>My Services</h2>
-
-<div class="cards">
-
-<div class="card">
-<h3>Facebook Growth</h3>
-<p>Grow your Facebook page faster and smarter.</p>
-</div>
-
-<div class="card">
-<h3>Monetization Setup</h3>
-<p>Help with Facebook monetization and earnings.</p>
-</div>
-
-<div class="card">
-<h3>Content Strategy</h3>
-<p>Create viral content plans and posting schedules.</p>
-</div>
-
-<div class="card">
-<h3>Consultation</h3>
-<p>One-to-one creator guidance and support.</p>
-</div>
-
-</div>
-
-</section>
-
-<section id="content">
-
-<h2>Featured Content</h2>
-
-<div class="cards">
-
-<div class="card">
-<h3>Facebook Growth Tips</h3>
-<p>Learn how to grow your audience organically.</p>
-</div>
-
-<div class="card">
-<h3>Monetization Guide</h3>
-<p>Earn money from digital content effectively.</p>
-</div>
-
-<div class="card">
-<h3>Viral Reels Strategy</h3>
-<p>Create high-performing and engaging reels.</p>
-</div>
-
-<div class="card">
-<h3>Content Planning</h3>
-<p>Plan and manage content consistently.</p>
-</div>
-
-</div>
-
-</section>
-
-<section id="register">
-
-<h2>Registration Form</h2>
-
-<form class="register-form">
-
-<input type="text" placeholder="Full Name" required>
-
-<input type="email" placeholder="Email Address" required>
-
-<input type="tel" placeholder="WhatsApp Number" required>
-
-<button type="submit">Register Now</button>
-
-</form>
-
-</section>
-
-<section id="contact">
-
-<h2>Connect With Me</h2>
-
-<div class="social-links">
-
-<a href="https://www.facebook.com/Narendra.gola.15" target="_blank">Facebook</a>
-
-<a href="https://www.instagram.com/narendragola01" target="_blank">Instagram</a>
-
-<a href="https://t.me/narendragola01" target="_blank">Telegram</a>
-
-</div>
-
-</section>
-
-<footer>
-
-<h3>Narendragola Official</h3>
-
-<p>Facebook Creator • Blogger • Digital Entrepreneur</p>
-
-<p>© 2026 All Rights Reserved</p>
-
-</footer>
-
-<a href="https://wa.me/919999999999" class="whatsapp-btn" target="_blank">
-💬
-</a>
-
-</body>
-</html>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+background:#0f172a;
+color:white;
+}
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+padding:15px 8%;
+background:rgba(0,0,0,.6);
+backdrop-filter:blur(10px);
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:1000;
+}
+
+.logo{
+font-size:24px;
+font-weight:700;
+color:#38bdf8;
+}
+
+.menu a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+font-weight:500;
+}
+
+.hero{
+height:100vh;
+
+background:
+linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+url("banner.jpg.png");
+
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+.hero h1{
+font-size:65px;
+margin-bottom:15px;
+}
+
+.hero p{
+font-size:22px;
+margin-bottom:25px;
+}
+
+.btn{
+display:inline-block;
+padding:15px 35px;
+background:#38bdf8;
+color:white;
+text-decoration:none;
+border-radius:40px;
+font-weight:600;
+}
+
+.hero-social{
+margin-top:25px;
+}
+
+.hero-social a{
+display:inline-block;
+padding:10px 20px;
+background:#38bdf8;
+color:white;
+text-decoration:none;
+border-radius:25px;
+margin:5px;
+}
+
+section{
+padding:100px 8%;
+text-align:center;
+}
+
+h2{
+font-size:40px;
+margin-bottom:40px;
+color:#38bdf8;
+}
+
+.about-box{
+max-width:800px;
+margin:auto;
+line-height:1.8;
+}
+
+.profile-stats{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+}
+
+.stat-box{
+background:rgba(255,255,255,.05);
+padding:30px;
+border-radius:15px;
+}
+
+.stat-box h3{
+font-size:40px;
+color:#38bdf8;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:rgba(255,255,255,.05);
+padding:30px;
+border-radius:15px;
+backdrop-filter:blur(10px);
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.register-form{
+max-width:600px;
+margin:auto;
+}
+
+.register-form input{
+width:100%;
+padding:15px;
+margin-bottom:15px;
+border:none;
+border-radius:10px;
+}
+
+.register-form button{
+padding:15px 30px;
+border:none;
+background:#38bdf8;
+color:white;
+border-radius:30px;
+cursor:pointer;
+}
+
+.social-links a{
+display:inline-block;
+margin:10px;
+padding:12px 25px;
+background:#38bdf8;
+color:white;
+text-decoration:none;
+border-radius:30px;
+}
+
+footer{
+background:#020617;
+padding:40px;
+text-align:center;
+}
+
+.whatsapp-btn{
+position:fixed;
+bottom:20px;
+right:20px;
+width:65px;
+height:65px;
+background:#25D366;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:30px;
+text-decoration:none;
+color:white;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:40px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+nav{
+flex-direction:column;
+}
+
+.menu{
+margin-top:10px;
+}
+}
