@@ -1,143 +1,220 @@
-*{ margin:0; padding:0; box-sizing:border-box; font-family:Arial,sans-serif; }
-body{ background:#081228; color:#ffffff; line-height:1.6; }
-nav{ position:fixed; top:0; left:0; width:100%; background:#111827; padding:15px; text-align:center; z-index:1000; box-shadow:0 2px 10px rgba(0,0,0,0.4); }
-nav a{ color:#ffffff; text-decoration:none; margin:0 15px; font-weight:bold; transition:0.3s; }
-nav a:hover{ color:#facc15; }
-.hero{ margin-top:60px; width:100%; background:#081228; }
-.hero img{ width:100%; height:auto; display:block; }
-section{ max-width:1100px; margin:auto; padding:50px 20px; }
-h2{ color:#facc15; margin-bottom:20px; font-size:32px; }
-.about-box{ background:#111827; padding:25px; border-radius:15px; box-shadow:0 5px 15px rgba(0,0,0,0.25); }
-.about-box h3{ color:#facc15; margin-bottom:10px; }
-.cards{ display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:20px; }
-.card{ background:#111827; padding:25px; border-radius:15px; transition:0.3s; }
-.card:hover{ transform:translateY(-5px); background:#1e293b; }
-.card h3{ color:#facc15; margin-bottom:10px; }
-.stats{ display:grid; grid-template-columns:repeat(3,1fr); gap:20px; text-align:center; }
-.stat-box{ background:#111827; padding:25px; border-radius:15px; }
-.stat-box h3{ font-size:32px; color:#facc15; }
-.social-links{ display:flex; justify-content:center; gap:15px; flex-wrap:wrap; }
-.social-links a{ background:#2563eb; color:white; padding:12px 22px; border-radius:10px; text-decoration:none; font-weight:bold; transition:0.3s; }
-.social-links a:hover{ background:#1d4ed8; }
-footer{ background:#111827; text-align:center; padding:25px; margin-top:40px; }
-@media(max-width:768px){
-nav a{ margin:0 6px; font-size:13px; }
-h2{ font-size:24px; }
-.stats{ grid-template-columns:1fr; }
-.social-links{ flex-direction:column; }
-.social-links a{ text-align:center; }
-.hero img{ width:100%; height:auto; display:block; }
-}
-.hero{
-position:relative;
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
 }
 
-.hero-content{
-position:absolute;
-top:50%;
-left:50%;
-transform:translate(-50%,-50%);
-text-align:center;
+html{
+scroll-behavior:smooth;
+}
+
+body{
+background:#0f172a;
 color:white;
-background:rgba(0,0,0,0.45);
+}
+
+header{
+position:fixed;
+width:100%;
+top:0;
+z-index:1000;
+background:rgba(15,23,42,.9);
+backdrop-filter:blur(10px);
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+}
+
+.logo{
+font-size:24px;
+font-weight:700;
+color:#38bdf8;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:30px;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+font-weight:500;
+}
+
+.hero{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
 padding:20px;
-border-radius:15px;
+background:linear-gradient(135deg,#0f172a,#1e293b,#2563eb);
+}
+
+.profile{
+width:180px;
+height:180px;
+border-radius:50%;
+object-fit:cover;
+border:5px solid white;
+margin-bottom:20px;
+}
+
+.hero h1{
+font-size:55px;
+margin-bottom:10px;
+}
+
+.hero h2{
+color:#38bdf8;
+margin-bottom:15px;
+}
+
+.hero p{
+max-width:700px;
+margin:auto;
+line-height:1.8;
 }
 
 .btn{
 display:inline-block;
-margin-top:15px;
-padding:12px 25px;
-background:#facc15;
-color:#000;
-font-weight:bold;
-text-decoration:none;
-border-radius:10px;
-}
-
-.profile-stats{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:20px;
-padding:40px 20px;
-max-width:1100px;
-margin:auto;
-}
-
-.register-form{
-display:flex;
-flex-direction:column;
-gap:15px;
-max-width:500px;
-margin:auto;
-}
-
-.register-form input{
-padding:15px;
-border:none;
-border-radius:10px;
-background:#111827;
+margin-top:25px;
+padding:12px 28px;
+background:#38bdf8;
 color:white;
+text-decoration:none;
+border-radius:30px;
+font-weight:600;
 }
 
-.register-form button{
+.about,
+.services,
+.contact,
+.testimonials{
+padding:100px 8%;
+text-align:center;
+}
+
+.about h2,
+.services h2,
+.contact h2,
+.testimonials h2{
+font-size:40px;
+margin-bottom:30px;
+color:#38bdf8;
+}
+
+.service-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:rgba(255,255,255,.05);
+padding:30px;
+border-radius:15px;
+backdrop-filter:blur(10px);
+border:1px solid rgba(255,255,255,.1);
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card h3{
+margin-bottom:15px;
+}
+
+.testimonial-box{
+background:rgba(255,255,255,.05);
+padding:25px;
+border-radius:15px;
+margin-bottom:20px;
+}
+
+form{
+max-width:600px;
+margin:auto;
+}
+
+input,
+textarea{
+width:100%;
 padding:15px;
+margin-bottom:15px;
 border:none;
 border-radius:10px;
-background:#facc15;
-font-weight:bold;
+}
+
+button{
+padding:15px 30px;
+background:#38bdf8;
+border:none;
+border-radius:30px;
+color:white;
+font-size:16px;
 cursor:pointer;
+}
+
+footer{
+background:#020617;
+padding:40px;
+text-align:center;
+}
+
+.social{
+margin:15px 0;
+}
+
+.social a{
+color:#38bdf8;
+text-decoration:none;
+margin:0 10px;
+}
+
+.whatsapp-btn{
+position:fixed;
+bottom:20px;
+right:20px;
+width:60px;
+height:60px;
+background:#25D366;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:30px;
+text-decoration:none;
+color:white;
+box-shadow:0 5px 20px rgba(0,0,0,.3);
 }
 
 @media(max-width:768px){
 
-.hero-content{
-position:static;
-transform:none;
-margin:20px;
+nav{
+flex-direction:column;
+gap:15px;
 }
 
-.profile-stats{
-grid-template-columns:1fr;
+.hero h1{
+font-size:38px;
 }
 
-}
-/* Registration Form Premium Design */
-
-.register-form{
-    max-width:500px;
-    margin:30px auto;
-    display:flex;
-    flex-direction:column;
-    gap:15px;
+.hero h2{
+font-size:20px;
 }
 
-.register-form input{
-    width:100%;
-    padding:15px;
-    border:none;
-    border-radius:10px;
-    background:#111827;
-    color:#fff;
-    font-size:16px;
+.profile{
+width:140px;
+height:140px;
 }
-
-.register-form input::placeholder{
-    color:#9ca3af;
-}
-
-.register-form button{
-    padding:15px;
-    border:none;
-    border-radius:10px;
-    background:#facc15;
-    color:#000;
-    font-weight:bold;
-    font-size:16px;
-    cursor:pointer;
-    transition:0.3s;
-}
-
-.register-form button:hover{
-    background:#eab308;
 }
