@@ -102,3 +102,42 @@ grid-template-columns:1fr;
 }
 
 }
+/* Registration Form Premium Design */
+
+.register-form{
+    max-width:500px;
+    margin:30px auto;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.register-form input{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:10px;
+    background:#111827;
+    color:#fff;
+    font-size:16px;
+}
+
+.register-form input::placeholder{
+    color:#9ca3af;
+}
+
+.register-form button{
+    padding:15px;
+    border:none;
+    border-radius:10px;
+    background:#facc15;
+    color:#000;
+    font-weight:bold;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.register-form button:hover{
+    background:#eab308;
+}
