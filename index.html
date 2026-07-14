@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0b1020" />
+  <meta name="description" content="Narendra Gola Official - Facebook growth, monetization, viral reels strategy and creator consultation." />
+  <meta name="keywords" content="Narendra Gola, Facebook Growth, Facebook Monetization, Viral Reels, Digital Creator, Content Strategy" />
+  <meta name="author" content="Narendra Gola" />
+
+  <meta property="og:title" content="Narendra Gola Official" />
+  <meta property="og:description" content="Practical Facebook growth, monetization and viral reels strategy for creators." />
+  <meta property="og:image" content="banner.jpg.png" />
+  <meta property="og:type" content="website" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Narendra Gola Official" />
+  <meta name="twitter:description" content="Facebook growth, monetization and creator strategy." />
+  <meta name="twitter:image" content="banner.jpg.png" />
+
+  <title>Narendra Gola Official | Facebook Growth & Monetization</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+  <style>
+    :root {
+      --bg: #07111f;
+      --bg-soft: #0d1728;
+      --surface: rgba(255,255,255,.07);
+      --surface-strong: rgba(255,255,255,.11);
+      --text: #f7f9fc;
+      --muted: #aeb8c9;
+      --primary: #f7c84b;
+      --primary-2: #ffdf7d;
+      --accent: #53a7ff;
+      --success: #25d366;
+      --border: rgba(255,255,255,.12);
+      --shadow: 0 24px 70px rgba(0,0,0,.35);
+      --radius: 22px;
+      --max: 1180px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 10% 0%, rgba(83,167,255,.18), transparent 30%),
+        radial-gradient(circle at 100% 10%, rgba(247,200,75,.16), transparent 28%),
+        var(--bg);
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    img { max-width: 100%; display: block; }
+    a { color: inherit; text-decoration: none; }
+    button, input { font: inherit; }
+    section { scroll-margin-top: 90px; }
+
+    .container { width: min(92%, var(--max)); margin-inline: auto; }
+    .section { padding: 96px 0; }
+    .section-head { max-width: 720px; margin-bottom: 42px; }
+    .section-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 12px;
+      border: 1px solid rgba(247,200,75,.28);
+      border-radius: 999px;
+      color: var(--primary-2);
+      background: rgba(247,200,75,.08);
+      font-size: .85rem;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+    h1, h2, h3 { font-family: Manrope, Inter, sans-serif; margin: 0; line-height: 1.15; }
+    h1 { font-size: clamp(2.6rem, 6vw, 5.6rem); letter-spacing: -.055em; }
+    h2 { font-size: clamp(2rem, 4vw, 3.4rem); letter-spacing: -.04em; }
+    h3 { font-size: 1.22rem; }
+    p { margin: 0; }
+    .lead { color: var(--muted); font-size: 1.06rem; margin-top: 18px; }
+
+    .top-progress {
+      position: fixed;
+      top: 0; left: 0;
+      width: 0;
+      height: 3px;
+      z-index: 9999;
+      background: linear-gradient(90deg, var(--primary), var(--accent));
+    }
+
+    .nav-wrap {
+      position: fixed;
+      inset: 0 0 auto;
+      z-index: 1000;
+      padding: 14px 0;
+      transition: .3s ease;
+    }
+    .nav-wrap.scrolled { background: rgba(7,17,31,.8); backdrop-filter: blur(18px); border-bottom: 1px solid var(--border); }
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      padding: 10px 14px;
+      border: 1px solid transparent;
+      border-radius: 18px;
+    }
+    .brand { font-family: Manrope, sans-serif; font-weight: 800; font-size: 1.25rem; letter-spacing: -.03em; }
+    .brand span { color: var(--primary); }
+    .nav-links { display: flex; align-items: center; gap: 26px; }
+    .nav-links a { color: #dce3ef; font-size: .95rem; font-weight: 600; }
+    .nav-links a:hover { color: var(--primary); }
+    .nav-actions { display: flex; align-items: center; gap: 10px; }
+    .menu-btn {
+      display: none;
+      width: 44px; height: 44px;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--text);
+      border-radius: 12px;
+      cursor: pointer;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      min-height: 52px;
+      padding: 0 22px;
+      border-radius: 14px;
+      font-weight: 800;
+      border: 1px solid transparent;
+      transition: transform .22s ease, box-shadow .22s ease, background .22s ease;
+    }
+    .btn:hover { transform: translateY(-2px); }
+    .btn-primary {
+      color: #10151f;
+      background: linear-gradient(135deg, var(--primary), var(--primary-2));
+      box-shadow: 0 16px 34px rgba(247,200,75,.22);
+    }
+    .btn-secondary { background: var(--surface); border-color: var(--border); }
+    .btn-secondary:hover { background: var(--surface-strong); }
+    .btn-small { min-height: 44px; padding: 0 16px; border-radius: 12px; }
+
+    .hero {
+      min-height: 100vh;
+      display: grid;
+      align-items: center;
+      position: relative;
+      padding: 135px 0 80px;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(circle at 82% 22%, rgba(247,200,75,.18), transparent 25%),
+        radial-gradient(circle at 72% 70%, rgba(83,167,255,.18), transparent 30%),
+        linear-gradient(135deg, #07111f 0%, #0b1728 52%, #101c2d 100%);
+      z-index: -2;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: auto 0 0;
+      height: 220px;
+      background: linear-gradient(transparent, var(--bg));
+      z-index: -1;
+    }
+    .hero-grid { display: grid; grid-template-columns: 1.1fr .9fr; align-items: center; gap: 48px; }
+    .hero-copy { max-width: 780px; }
+    .eyebrow { color: var(--primary-2); font-weight: 800; letter-spacing: .1em; text-transform: uppercase; font-size: .84rem; margin-bottom: 18px; }
+    .gradient-text { background: linear-gradient(135deg, #fff, var(--primary-2)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+    .hero-subtitle { max-width: 700px; color: #c2cad7; font-size: clamp(1rem, 2vw, 1.22rem); margin-top: 22px; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 34px; }
+    .trust-row { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
+    .trust-chip { padding: 10px 13px; border: 1px solid var(--border); border-radius: 999px; background: rgba(255,255,255,.05); color: #dfe6f1; font-size: .9rem; }
+
+    .hero-card {
+      justify-self: end;
+      width: min(100%, 420px);
+      padding: 26px;
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      background: rgba(13,23,40,.68);
+      backdrop-filter: blur(18px);
+      box-shadow: var(--shadow);
+    }
+    .hero-card-top { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+    .status { display: inline-flex; align-items: center; gap: 8px; color: #dff9e8; font-size: .88rem; }
+    .status-dot { width: 9px; height: 9px; background: var(--success); border-radius: 50%; box-shadow: 0 0 0 6px rgba(37,211,102,.12); }
+    .mini-title { color: var(--muted); font-size: .88rem; }
+    .score { font-size: 3rem; font-weight: 800; margin: 16px 0 4px; }
+    .score span { font-size: 1rem; color: var(--muted); }
+    .mini-bars { display: grid; gap: 14px; margin-top: 24px; }
+    .mini-bar-label { display: flex; justify-content: space-between; color: #d8dfeb; font-size: .9rem; margin-bottom: 7px; }
+    .bar { height: 9px; background: rgba(255,255,255,.08); border-radius: 999px; overflow: hidden; }
+    .bar span { display: block; height: 100%; border-radius: inherit; background: linear-gradient(90deg, var(--accent), var(--primary)); }
+
+    .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; margin-top: -20px; position: relative; z-index: 3; }
+    .stat-card, .card, .result-card, .testimonial-card, .faq-item, .form-card, .about-card {
+      border: 1px solid var(--border);
+      background: linear-gradient(180deg, rgba(255,255,255,.075), rgba(255,255,255,.04));
+      box-shadow: 0 12px 34px rgba(0,0,0,.18);
+    }
+    .stat-card { padding: 26px; border-radius: 20px; text-align: center; }
+    .stat-card strong { display: block; font-size: 2rem; font-family: Manrope, sans-serif; }
+    .stat-card span { color: var(--muted); font-size: .92rem; }
+
+    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; align-items: stretch; }
+    .about-card { border-radius: var(--radius); padding: 34px; }
+    .about-list { display: grid; gap: 16px; margin-top: 26px; }
+    .about-list div { display: flex; gap: 12px; color: #dce3ee; }
+    .about-list i { color: var(--primary); margin-top: 6px; }
+    .profile-box { display: grid; gap: 22px; }
+    .profile-badge { display: inline-flex; gap: 10px; align-items: center; color: var(--primary-2); font-weight: 800; }
+    .profile-role { color: var(--muted); margin-top: 8px; }
+
+    .cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+    .card { border-radius: var(--radius); padding: 28px; transition: transform .25s ease, border-color .25s ease; }
+    .card:hover { transform: translateY(-7px); border-color: rgba(247,200,75,.4); }
+    .icon-box { width: 52px; height: 52px; display: grid; place-items: center; border-radius: 15px; background: rgba(247,200,75,.12); color: var(--primary); font-size: 1.2rem; margin-bottom: 22px; }
+    .card p { color: var(--muted); margin-top: 12px; }
+
+    .tinted { background: linear-gradient(180deg, rgba(255,255,255,.025), rgba(255,255,255,.01)); border-block: 1px solid rgba(255,255,255,.06); }
+    .results-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .result-card { min-height: 280px; border-radius: var(--radius); padding: 24px; display: flex; flex-direction: column; justify-content: flex-end; position: relative; overflow: hidden; }
+    .result-card::before { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(83,167,255,.12), rgba(247,200,75,.08)); }
+    .result-card > * { position: relative; }
+    .result-card span { color: var(--primary-2); font-size: .82rem; font-weight: 800; text-transform: uppercase; letter-spacing: .08em; }
+    .result-card strong { font-size: 1.25rem; margin-top: 8px; }
+    .result-card p { color: var(--muted); margin-top: 8px; }
+
+    .testimonial-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .testimonial-card { padding: 28px; border-radius: var(--radius); }
+    .stars { color: var(--primary); letter-spacing: 3px; margin-bottom: 18px; }
+    .testimonial-card p { color: #e9edf4; }
+    .testimonial-card h4 { margin: 18px 0 0; color: var(--muted); }
+
+    .faq-list { display: grid; gap: 14px; }
+    .faq-item { border-radius: 18px; overflow: hidden; }
+    .faq-question { width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 20px 22px; border: 0; background: transparent; color: var(--text); text-align: left; font-weight: 800; cursor: pointer; }
+    .faq-answer { max-height: 0; overflow: hidden; transition: max-height .3s ease; }
+    .faq-answer p { padding: 0 22px 22px; color: var(--muted); }
+    .faq-item.active .faq-answer { max-height: 180px; }
+    .faq-item.active .faq-question i { transform: rotate(45deg); }
+    .faq-question i { transition: .25s ease; color: var(--primary); }
+
+    .register-grid { display: grid; grid-template-columns: .85fr 1.15fr; gap: 32px; align-items: center; }
+    .form-card { padding: 30px; border-radius: var(--radius); }
+    .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .form-grid .full { grid-column: 1 / -1; }
+    .input { width: 100%; min-height: 54px; border-radius: 14px; border: 1px solid var(--border); background: rgba(255,255,255,.055); color: var(--text); padding: 0 16px; outline: none; }
+    .input:focus { border-color: var(--primary); box-shadow: 0 0 0 4px rgba(247,200,75,.09); }
+    .input::placeholder { color: #8f9bad; }
+    .form-note { color: var(--muted); font-size: .85rem; margin-top: 12px; }
+
+    .social-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 14px; }
+    .social-link { display: flex; align-items: center; justify-content: center; gap: 10px; min-height: 60px; border: 1px solid var(--border); border-radius: 16px; background: var(--surface); font-weight: 700; transition: .2s ease; }
+    .social-link:hover { transform: translateY(-4px); background: var(--surface-strong); color: var(--primary); }
+
+    .cta {
+      margin-bottom: 80px;
+      padding: 42px;
+      border-radius: 28px;
+      border: 1px solid rgba(247,200,75,.25);
+      background: linear-gradient(135deg, rgba(247,200,75,.13), rgba(83,167,255,.11));
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    footer { border-top: 1px solid var(--border); padding: 34px 0; color: var(--muted); }
+    .footer-grid { display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+
+    .float-btn {
+      position: fixed;
+      right: 22px;
+      width: 52px; height: 52px;
+      display: grid; place-items: center;
+      border-radius: 50%;
+      box-shadow: 0 16px 35px rgba(0,0,0,.3);
+      z-index: 999;
+    }
+    .whatsapp { bottom: 22px; background: var(--success); color: white; font-size: 1.35rem; }
+    .to-top { bottom: 84px; background: #15233a; border: 1px solid var(--border); color: white; opacity: 0; pointer-events: none; transition: .25s ease; }
+    .to-top.show { opacity: 1; pointer-events: auto; }
+
+    .reveal { opacity: 0; transform: translateY(20px); transition: .7s ease; }
+    .reveal.visible { opacity: 1; transform: none; }
+
+    @media (max-width: 980px) {
+      .hero-grid, .about-grid, .register-grid { grid-template-columns: 1fr; }
+      .hero-card { justify-self: start; }
+      .cards { grid-template-columns: repeat(2, 1fr); }
+      .stats { grid-template-columns: repeat(2, 1fr); }
+      .social-grid { grid-template-columns: repeat(3, 1fr); }
+      .nav-links {
+        position: fixed;
+        top: 76px;
+        left: 4%; right: 4%;
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 4px;
+        padding: 16px;
+        background: rgba(7,17,31,.97);
+        border: 1px solid var(--border);
+        border-radius: 18px;
+        box-shadow: var(--shadow);
+      }
+      .nav-links.open { display: flex; }
+      .nav-links a { padding: 12px; }
+      .menu-btn { display: grid; place-items: center; }
+      .nav-actions .btn-small { display: none; }
+    }
+
+    @media (max-width: 720px) {
+      .section { padding: 72px 0; }
+      .hero { min-height: auto; padding-top: 118px; }
+      .hero::before { background: linear-gradient(rgba(7,17,31,.82), rgba(7,17,31,.95)), url('banner.jpg.png') center/cover no-repeat; }
+      .hero-actions, .cta { align-items: stretch; flex-direction: column; }
+      .btn { width: 100%; }
+      .cards, .results-grid, .testimonial-grid, .stats, .social-grid, .form-grid { grid-template-columns: 1fr; }
+      .form-grid .full { grid-column: auto; }
+      .cta { padding: 28px; }
+      .nav { padding-inline: 4px; }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Narendra Gola",
+    "url": "https://narendragola.github.io/",
+    "sameAs": [
+      "https://www.facebook.com/Narendra.gola.15",
+      "https://www.instagram.com/narendragola1",
+      "https://www.youtube.com/@narendragola",
+      "https://x.com/NarendraGola"
+    ],
+    "jobTitle": "Digital Creator and Facebook Growth Consultant"
+  }
+  </script>
+</head>
+<body>
+  <div class="top-progress" id="progressBar"></div>
+
+  <div class="nav-wrap" id="navbar">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#home">Narendra<span>Gola</span></a>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#results">Results</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="nav-actions">
+        <a class="btn btn-primary btn-small" href="https://wa.me/918586849078?text=Hello%20Narendra%20Sir%2C%20mujhe%20Facebook%20page%20growth%20consultation%20chahiye" target="_blank" rel="noopener">
+          <i class="fa-brands fa-whatsapp"></i> WhatsApp
+        </a>
+        <button class="menu-btn" id="menuBtn" aria-label="Open menu"><i class="fa-solid fa-bars"></i></button>
+      </div>
+    </nav>
+  </div>
+
+  <header class="hero" id="home">
+    <div class="container hero-grid">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Facebook Creator • Blogger • Digital Entrepreneur</p>
+        <h1>Grow Your Facebook Page With <span class="gradient-text">Practical Creator Strategy</span></h1>
+        <p class="hero-subtitle">Facebook growth, monetization, viral reels aur content planning ke simple, practical aur action-based steps.</p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="https://wa.me/918586849078?text=Hello%20Narendra%20Sir%2C%20mujhe%20Facebook%20page%20growth%20consultation%20chahiye" target="_blank" rel="noopener">
+            <i class="fa-brands fa-whatsapp"></i> Free WhatsApp Consultation
+          </a>
+          <a class="btn btn-secondary" href="#register"><i class="fa-regular fa-paper-plane"></i> Register Now</a>
+        </div>
+
+        <div class="trust-row">
+          <span class="trust-chip">⭐ 10K+ Followers</span>
+          <span class="trust-chip">🎬 500+ Reels</span>
+          <span class="trust-chip">🚀 100+ Tips Shared</span>
+          <span class="trust-chip">🏆 50+ Success Stories</span>
+        </div>
+      </div>
+
+      <aside class="hero-card reveal" aria-label="Creator growth scorecard">
+        <div class="hero-card-top">
+          <div>
+            <div class="mini-title">Creator Growth Score</div>
+            <div class="score">92<span>/100</span></div>
+          </div>
+          <div class="status"><span class="status-dot"></span> Available</div>
+        </div>
+
+        <div class="mini-bars">
+          <div>
+            <div class="mini-bar-label"><span>Content Strategy</span><span>94%</span></div>
+            <div class="bar"><span style="width:94%"></span></div>
+          </div>
+          <div>
+            <div class="mini-bar-label"><span>Reels Planning</span><span>90%</span></div>
+            <div class="bar"><span style="width:90%"></span></div>
+          </div>
+          <div>
+            <div class="mini-bar-label"><span>Monetization Guidance</span><span>88%</span></div>
+            <div class="bar"><span style="width:88%"></span></div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </header>
+
+  <main>
+    <div class="container stats reveal">
+      <div class="stat-card"><strong class="counter" data-target="10000">0</strong><span>Followers</span></div>
+      <div class="stat-card"><strong class="counter" data-target="500">0</strong><span>Reels Created</span></div>
+      <div class="stat-card"><strong class="counter" data-target="100">0</strong><span>Growth Tips</span></div>
+      <div class="stat-card"><strong class="counter" data-target="50">0</strong><span>Creator Stories</span></div>
+    </div>
+
+    <section class="section" id="about">
+      <div class="container about-grid">
+        <div class="section-head reveal">
+          <span class="section-label"><i class="fa-regular fa-user"></i> About Me</span>
+          <h2>Creators ko grow karne ke liye simple aur practical guidance.</h2>
+          <p class="lead">Main creators ko content ideas, posting strategy, reels hooks aur monetization basics samjhata hoon—simple language mein, clear action steps ke saath.</p>
+        </div>
+
+        <div class="about-card profile-box reveal">
+          <div>
+            <div class="profile-badge"><i class="fa-solid fa-circle-check"></i> Official Creator Profile</div>
+            <h3 style="font-size:2rem; margin-top:14px;">Narendra Gola</h3>
+            <p class="profile-role">Facebook Creator | Blogger | Digital Entrepreneur</p>
+          </div>
+          <p class="lead" style="margin-top:0;">I share Facebook Growth Tips, Monetization Guides, Viral Reels Strategies and Content Planning ideas.</p>
+          <div class="about-list">
+            <div><i class="fa-solid fa-check"></i><span>Clear content planning for daily posting</span></div>
+            <div><i class="fa-solid fa-check"></i><span>Practical reels hooks and title ideas</span></div>
+            <div><i class="fa-solid fa-check"></i><span>Monetization and eligibility basics</span></div>
+          </div>
+          <a class="btn btn-secondary" href="https://www.facebook.com/Narendra.gola.15" target="_blank" rel="noopener"><i class="fa-brands fa-facebook"></i> View Facebook Profile</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section tinted" id="services">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-label"><i class="fa-solid fa-briefcase"></i> What I Do</span>
+          <h2>My Services</h2>
+          <p class="lead">Creator growth ke important areas ke liye focused guidance.</p>
+        </div>
+
+        <div class="cards">
+          <article class="card reveal"><div class="icon-box"><i class="fa-solid fa-chart-line"></i></div><h3>Facebook Growth</h3><p>Page reach, followers aur engagement badhane ke liye clear growth plan.</p></article>
+          <article class="card reveal"><div class="icon-box"><i class="fa-solid fa-indian-rupee-sign"></i></div><h3>Monetization Setup</h3><p>Eligibility, setup basics aur creator earning options ke practical steps.</p></article>
+          <article class="card reveal"><div class="icon-box"><i class="fa-solid fa-video"></i></div><h3>Viral Reels Strategy</h3><p>Hooks, titles, timing aur repeatable reel format ideas.</p></article>
+          <article class="card reveal"><div class="icon-box"><i class="fa-regular fa-calendar-days"></i></div><h3>Content Planning</h3><p>Daily posting ke liye content calendar aur reusable idea bank.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="results">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-label"><i class="fa-solid fa-trophy"></i> Growth Snapshot</span>
+          <h2>Show Your Real Results</h2>
+          <p class="lead">Neeche diye cards ko aap reach, earning proof aur viral reel screenshots se replace kar sakte hain.</p>
+        </div>
+
+        <div class="results-grid">
+          <div class="result-card reveal"><span>Screenshot 01</span><strong>Page Reach Growth</strong><p>Apna Facebook reach screenshot yahan add karein.</p></div>
+          <div class="result-card reveal"><span>Screenshot 02</span><strong>Monetization Proof</strong><p>Earning ya eligibility screenshot yahan add karein.</p></div>
+          <div class="result-card reveal"><span>Screenshot 03</span><strong>Viral Reel Result</strong><p>High-performing reel analytics screenshot yahan add karein.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section tinted" id="testimonials">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-label"><i class="fa-regular fa-comments"></i> Testimonials</span>
+          <h2>What People Say</h2>
+        </div>
+
+        <div class="testimonial-grid">
+          <div class="testimonial-card reveal"><div class="stars">★★★★★</div><p>“Narendra Sir ke Facebook tips se mere page ki reach improve hui.”</p><h4>— Happy Creator</h4></div>
+          <div class="testimonial-card reveal"><div class="stars">★★★★★</div><p>“Monetization guidance simple aur bahut useful rahi.”</p><h4>— Digital Creator</h4></div>
+          <div class="testimonial-card reveal"><div class="stars">★★★★★</div><p>“Content strategy se engagement aur posting consistency improve hui.”</p><h4>— Content Creator</h4></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-label"><i class="fa-regular fa-circle-question"></i> FAQ</span>
+          <h2>Common Questions</h2>
+        </div>
+
+        <div class="faq-list">
+          <div class="faq-item active reveal"><button class="faq-question">Facebook page grow kaise kare?<i class="fa-solid fa-plus"></i></button><div class="faq-answer"><p>Daily useful content, strong hooks, reels consistency aur audience comments ka reply karein.</p></div></div>
+          <div class="faq-item reveal"><button class="faq-question">Monetization kaise milegi?<i class="fa-solid fa-plus"></i></button><div class="faq-answer"><p>Original content, policy compliance, regular posting aur eligibility requirements complete karna zaroori hai.</p></div></div>
+          <div class="faq-item reveal"><button class="faq-question">Viral reel ka secret kya hai?<i class="fa-solid fa-plus"></i></button><div class="faq-answer"><p>First 3 seconds ka hook, clear message, suitable duration aur relatable topic sabse important hote hain.</p></div></div>
+          <div class="faq-item reveal"><button class="faq-question">Consultation kaise milegi?<i class="fa-solid fa-plus"></i></button><div class="faq-answer"><p>WhatsApp button par click karke apna page link aur problem send kar dijiye.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section tinted" id="register">
+      <div class="container register-grid">
+        <div class="section-head reveal">
+          <span class="section-label"><i class="fa-regular fa-paper-plane"></i> Join Now</span>
+          <h2>Registration Form</h2>
+          <p class="lead">Apni details bhejiye aur creator growth guidance ke liye connect kijiye.</p>
+        </div>
+
+        <form class="form-card reveal" action="https://formspree.io/f/mpqeyoqy" method="POST">
+          <div class="form-grid">
+            <input class="input" type="text" name="name" placeholder="Full Name" required />
+            <input class="input" type="email" name="email" placeholder="Email Address" required />
+            <input class="input" type="tel" name="phone" placeholder="WhatsApp Number" required />
+            <input class="input" type="text" name="page_link" placeholder="Facebook Page Link" />
+            <input type="hidden" name="_subject" value="New Registration From Narendra Gola Official" />
+            <button class="btn btn-primary full" type="submit"><i class="fa-regular fa-paper-plane"></i> Register Now</button>
+          </div>
+          <p class="form-note">By submitting, you agree to be contacted regarding creator consultation.</p>
+        </form>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-label"><i class="fa-solid fa-link"></i> Connect</span>
+          <h2>Connect With Me</h2>
+        </div>
+
+        <div class="social-grid">
+          <a class="social-link reveal" href="https://www.facebook.com/Narendra.gola.15" target="_blank" rel="noopener"><i class="fa-brands fa-facebook"></i> Facebook</a>
+          <a class="social-link reveal" href="https://www.instagram.com/narendragola1" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i> Instagram</a>
+          <a class="social-link reveal" href="https://t.me/narendragola01" target="_blank" rel="noopener"><i class="fa-brands fa-telegram"></i> Telegram</a>
+          <a class="social-link reveal" href="https://wa.me/918586849078" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+          <a class="social-link reveal" href="https://www.youtube.com/@narendragola" target="_blank" rel="noopener"><i class="fa-brands fa-youtube"></i> YouTube</a>
+          <a class="social-link reveal" href="https://x.com/NarendraGola" target="_blank" rel="noopener"><i class="fa-brands fa-x-twitter"></i> X</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="container cta reveal">
+      <div>
+        <span class="section-label"><i class="fa-solid fa-rocket"></i> Start Growing</span>
+        <h2 style="font-size:clamp(1.8rem,4vw,3rem);">Ready to improve your Facebook page?</h2>
+        <p class="lead">Apna page link bhejiye aur consultation start kijiye.</p>
+      </div>
+      <a class="btn btn-primary" href="https://wa.me/918586849078?text=Hello%20Narendra%20Sir%2C%20mujhe%20Facebook%20page%20growth%20consultation%20chahiye" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp</a>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div><strong style="color:white;">Narendra Gola Official</strong><br><span>Facebook Growth • Monetization • Viral Reels • Content Strategy</span></div>
+      <small>&copy; <span id="year"></span> Narendra Gola Official. All Rights Reserved.</small>
+    </div>
+  </footer>
+
+  <a class="float-btn to-top" id="toTop" href="#home" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></a>
+  <a class="float-btn whatsapp" href="https://wa.me/918586849078?text=Hello%20Narendra%20Sir" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+
+  <script>
+    const navbar = document.getElementById('navbar');
+    const progressBar = document.getElementById('progressBar');
+    const toTop = document.getElementById('toTop');
+    const menuBtn = document.getElementById('menuBtn');
+    const navLinks = document.getElementById('navLinks');
+
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 20);
+      toTop.classList.toggle('show', window.scrollY > 500);
+      const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      progressBar.style.width = `${(window.scrollY / height) * 100}%`;
+    });
+
+    menuBtn.addEventListener('click', () => navLinks.classList.toggle('open'));
+    navLinks.querySelectorAll('a').forEach(link => link.addEventListener('click', () => navLinks.classList.remove('open')));
+
+    document.querySelectorAll('.faq-question').forEach(button => {
+      button.addEventListener('click', () => {
+        const item = button.parentElement;
+        document.querySelectorAll('.faq-item').forEach(other => {
+          if (other !== item) other.classList.remove('active');
+        });
+        item.classList.toggle('active');
+      });
+    });
+
+    const revealObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    }, { threshold: .12 });
+    document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+    const counters = document.querySelectorAll('.counter');
+    const counterObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        const el = entry.target;
+        const target = Number(el.dataset.target);
+        let current = 0;
+        const duration = 1200;
+        const stepTime = 20;
+        const increment = target / (duration / stepTime);
+        const timer = setInterval(() => {
+          current += increment;
+          if (current >= target) {
+            current = target;
+            clearInterval(timer);
+          }
+          el.textContent = Math.floor(current).toLocaleString('en-IN') + '+';
+        }, stepTime);
+        counterObserver.unobserve(el);
+      });
+    }, { threshold: .5 });
+    counters.forEach(counter => counterObserver.observe(counter));
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
